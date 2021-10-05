@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludo inicial</title>
+</head>
+<body>
+{% include "botonera.html" %}
+<h1>Hola mundo</h1>
+{% if temas %}
+<ul>
+    {% for t in temas %}
+    <li>{{t}}</li>
+    {% endfor %}
+</ul>
+{%else%}
+<p>No hay temas que mostrar</p>
+{%endif%}
+
+El profesor es {{nombre_persona|upper}}, de apellido {{apellido_persona|lower}}
+</body>
+</html>

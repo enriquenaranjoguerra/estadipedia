@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+        body {
+            font-family: verdana;
+        }
+        #titulo{
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+        }
+        #pie {
+            background-color: darkgreen;
+            color: white;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Enciclopedia estadística</h1>
+    {% include "botonera.html" %}
+    <h3>Calculadora específica para su uso en clase</h3>
+    {% block content %} {% endblock %}
+    <p id="pie">Uso gratuito, propiedad de la UCA</p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "madre.html" %}
+{% block title %}
+Estadística descriptiva univariante
+{% endblock %}
+
+{% block content %}
+Elige una sección:
+{% for s in secciones %}
+<p>{{s}}</p>
+{% endfor %}
+{% endblock %}
