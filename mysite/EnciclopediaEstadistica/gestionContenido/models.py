@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Rama(models.Model):
-    nombre = models.CharField(max_length=100)
+    nombre = models.CharField(max_length=100, verbose_name="Nombre de la rama")
     rama = models.CharField(max_length=100, blank=True, null=True)
 
     def __str__(self):
